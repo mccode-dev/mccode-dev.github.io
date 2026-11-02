@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>McCode</title>
+<meta name="description" content="McCode: home of the McStas (neutron) and McXtrace (X-ray) ray-tracing packages.">
+<style>
+  :root { --bg: #fff; --fg: #222; --muted: #666; --link: #006699; --card: #f4f6f8; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #16181b; --fg: #e6e6e6; --muted: #9aa0a6; --link: #6cb6e8; --card: #22262b; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.5 system-ui, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px; }
+  h1 { margin: 0 0 4px; font-size: 2em; }
+  p.lead { margin: 0 0 28px; color: var(--muted); }
+  a { color: var(--link); }
+  .logos { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-bottom: 32px; }
+  /* logos are drawn for white backgrounds, so keep the tile white in dark mode too */
+  .logos a { display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 20px;
+             background: #fff; color: #006699; border-radius: 10px; text-decoration: none; border: 1px solid #ddd; }
+  .logos img { height: 110px; width: auto; max-width: 100%; }
+  ul { padding: 0; list-style: none; }
+  li { background: var(--card); border-radius: 8px; padding: 12px 16px; margin-bottom: 10px; }
+  li span { display: block; color: var(--muted); font-size: 0.9em; }
+</style>
+</head>
+<body>
+<main>
+  <h1>McCode</h1>
+  <p class="lead">Monte Carlo ray-tracing for neutron and X-ray instruments: McStas and McXtrace share one code base.</p>
+
+  <div class="logos">
+    <a href="https://mccode-dev.github.io/mcstas/"><img src="mcstas_logo.png" alt="McStas logo">McStas website</a>
+    <a href="https://mccode-dev.github.io/mcxtrace/"><img src="mcxtrace_logo.png" alt="McXtrace logo">McXtrace website</a>
+  </div>
+
+  <ul>
+    <li><a href="https://github.com/mccode-dev/McCode">McCode on GitHub</a><span>Source code, issues and releases for McStas and McXtrace</span></li>
+    <li><a href="https://github.com/mccode-dev/McCode/wiki">McCode wiki</a><span>Installation help, how-tos and community documentation</span></li>
+    <li><a href="https://mccode-dev.github.io/mccode-antlr/">mccode-antlr</a><span>ANTLR4-based McStas and McXtrace instrument compiler and Python API</span></li>
+  </ul>
+</main>
+</body>
+</html>

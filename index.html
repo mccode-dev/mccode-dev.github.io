@@ -23,6 +23,7 @@
   ul { padding: 0; list-style: none; }
   li { background: var(--card); border-radius: 8px; padding: 12px 16px; margin-bottom: 10px; }
   li span { display: block; color: var(--muted); font-size: 0.9em; }
+  .nightly { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px; }
 </style>
 </head>
 <body>
@@ -38,8 +39,11 @@
   <ul>
     <li><a href="https://github.com/mccode-dev/McCode">McCode on GitHub</a><span>Source code, issues and releases for McStas and McXtrace</span></li>
     <li><a href="/debian/">Debian/Ubuntu packages</a><span>apt repository with McStas and McXtrace for amd64 and arm64</span></li>
-    <li><a href="/mcstas-nightly/">McStas nightly tests</a><span>Results of the nightly instrument test suite across platforms, with history</span></li>
-    <li><a href="/mcxtrace-nightly/">McXtrace nightly tests</a><span>Results of the nightly instrument test suite across platforms, with history</span></li>
+    <li><div class="nightly">
+        <a href="/mcstas-nightly/">McStas nightly tests</a>
+        <a href="/ess-instrument-nightly/">ESS instruments nightly</a>
+        <a href="/mcxtrace-nightly/">McXtrace nightly tests</a>
+      </div><span>Results of the nightly test suites, with history: McStas and McXtrace across platforms, and the ESS instrument models with McCode main</span></li>
     <li><a href="https://github.com/mccode-dev/McCode/wiki">McCode wiki</a><span>Installation help, how-tos and community documentation</span></li>
     <li><a href="https://panosc-vinyl.github.io/McStasScript/">McStasScript</a><span>McStasScript enables a <code>.py</code> scripting interface to McStas/McXtrace </span></li>
     <li><a href="https://mccode.org/McStasToX/">McStasToX</a><span>McStasToX tool takes McCode NeXus -> scipp</span></li>    

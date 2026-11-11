@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }}</title>
+<style>
+  /* colours as on the landing page (index.html) */
+  :root { --bg: #fff; --fg: #222; --muted: #666; --link: #006699; --card: #f4f6f8; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #16181b; --fg: #e6e6e6; --muted: #9aa0a6; --link: #6cb6e8; --card: #22262b; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.5 system-ui, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px; overflow-wrap: break-word; }
+  a { color: var(--link); }
+  code { background: var(--card); border-radius: 4px; padding: 1px 4px; font-size: 0.9em; }
+</style>
+</head>
+<body>
+<main>
+{{ content }}
+</main>
+</body>
+</html>
